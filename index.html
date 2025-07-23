@@ -7,6 +7,8 @@
   <title>AZIPROPERTIES</title>
   <link rel="icon" type="image/img" href="img/logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-ZzvDijFHZl+1m0B9xJ+gK1HYwWNsRWhxdqSjeZZRFSOZPciMgePk7g6h6pLgJeF0O9tMlUvQOwph8DmIUPJmMA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -52,6 +54,7 @@
 
 
 
+
   <section class="relative" id="home">
     <img src="bg-home.avif" alt="Hero Image" class="w-full h-[550px]" />
     <div
@@ -60,6 +63,12 @@
       <p class="italic text-lg mt-2">Properties</p>
     </div>
   </section>
+
+  <!-- Floating Contact Button -->
+ 
+ 
+
+
 
  
 
@@ -193,12 +202,12 @@
     </div>
   </footer>
 
- <a href="https://wa.me/6285716451180" class="fixed bottom-5 right-5 z-50" target="_blank" aria-label="Chat WhatsApp">
-  <div class="relative">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" class="w-12 h-12 hover:scale-110 transition duration-300">
-    <span class="sr-only">Hubungi Wa Ini Jika Membutuhkan Bantuan</span>
-  </div>
-</a>
+  <div class="fixed bottom-5 right-5 z-50 flex items-center space-x-2 bg-green-500 px-3 py-2 rounded shadow-lg">
+  <a href="https://wa.me/6281234567890" target="_blank" class="flex items-center space-x-2" aria-label="Chat WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" class="w-6 h-6 hover:scale-110 transition duration-300">
+    <span class="text-white text-sm font-sans">Butuh Bantuan?</span>
+  </a>
+</div>
 
 
 </body>
