@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZIPROPERTIES</title>
+  <link rel="icon" type="image/img" href="img/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-ZzvDijFHZl+1m0B9xJ+gK1HYwWNsRWhxdqSjeZZRFSOZPciMgePk7g6h6pLgJeF0O9tMlUvQOwph8DmIUPJmMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="font-sans text-gray-800">
+  <header class="fixed top-0 w-full bg-white z-50 shadow">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <img src="img/logo.png" alt="Logo" class="h-12">
+
+      <!-- Hamburger Button (Mobile only) -->
+      <button class="md:hidden" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <!-- Nav Menu (Desktop) -->
+      <nav class="hidden md:flex space-x-5">
+        <a href="#" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Home</a>
+        <a href="#about" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">About</a>
+        <a href="#servis" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Servis</a>
+        <a href="#galery" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Galery</a>
+        <a href="#kontak" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <nav class="flex flex-col space-y-2">
+        <a href="#" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Home</a>
+        <a href="#about" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">About</a>
+        <a href="#servis" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Servis</a>
+        <a href="#galery" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Galery</a>
+        <a href="#kontak" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <section class="relative" id="home">
+    <img src="img/bg-home.avif" alt="Hero Image" class="w-full h-[600px]" />
+    <div
+      class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
+      <h1 class="text-4xl font-bold">WELCOME TO AZI SAPUTRA</h1>
+      <p class="italic text-lg mt-2">Properties</p>
+    </div>
+  </section>
+
+  <section class="bg-white py-6 shadow" id="about">
+    <div class="container mx-auto flex justify-center gap-14 flex-wrap">
+      <a href="" class="text-center">
+        <img src="img/icon/1.png" class="h-10 mx-auto" />
+        <p class="text-sm mt-1">Properti Baru</p>
+      </a>
+      <a href="" class="text-center">
+        <img src="img/icon/2.png" class="h-10 mx-auto" />
+        <p class="text-sm mt-1">Beli Rumah </p>
+      </a>
+      <a href="" class="text-center">
+        <img src="img/icon/3.png" class="h-10 mx-auto" />
+        <p class="text-sm mt-1">Beli Tanah</p>
+      </a>
+      <a href="" class="text-center">
+        <img src="img/icon/4.png" class="h-10 mx-auto" />
+        <p class="text-sm mt-1">Sewa Rumah</p>
+      </a>
+      <a href="" class="text-center">
+        <img src="img/icon/5.png" class="h-10 mx-auto" />
+        <p class="text-sm mt-1">Sewa Apartemen</p>
+      </a>
+      <a href="" class="text-center">
+        <img src="img/icon/6.png" class="h-10 mx-auto" />
+        <p class="text-sm mt-1">Sewa Kost</p>
+      </a>
+      <a href="" class="text-center">
+        <img src="img/icon/7.png" class="h-10 mx-auto" />
+        <p class="text-sm mt-1">Simulasi Kpr</p>
+      </a>
+      <a href="" class="text-center">
+        <img src="img/icon/8.png" class="h-10 mx-auto" />
+        <p class="text-sm mt-1">All</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="py-10 bg-white">
+    <div class="container mx-auto flex flex-col lg:flex-row gap-6 px-4">
+      <img src="img/bg-about.jpg" alt="Rumah" class="w-full lg:w-1/2 rounded shadow" />
+      <div class="lg:w-1/2">
+        <h2 class="text-xl font-bold mb-2">Layanan Kami Lahir dari sebuah permasalahan yg di hadapi oleh banyak orang
+        </h2>
+        <p class="text-sm mb-4">Kami hadir untuk membantu Anda menemukan Tempat Tinggal impian dengan mudah dan cepat.
+          Dengan jaringan properti luas dan tim ahli berpengalaman, kami siap memberikan solusi terbaik dalam jual,
+          beli, maupun sewa properti.
+          Fokus kami adalah memberikan layanan terpercaya, transparan, dan profesional bagi semua kalangan..</p>
+        <p class="text-sm">Kami juga hadir untuk memberikan solusi, membantu pencarian properti yang ideal, mudah, dan
+          sesuai anggaran Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-[#4B6FA9]  text-center" id="servis">
+    <h2 class="text-2xl text-white font-bold mb-6">Servis</h2>
+    <div class="container mx-auto flex justify-center gap-7 flex-wrap px-4">
+      <div class="bg-white p-6 rounded shadow  h-60 ">
+        <img src="img/servis/one.png" class="h-32  mx-auto mb-3" />
+        <p class="font-medium">Dapatkan panduan properti langsung</p>
+        <p class="font-medium"> dari tim ahli kami.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow  h-60 ">
+        <img src="img/servis/two.png" class="h-32  mx-auto mb-3" />
+        <p class="font-medium">Bantu Anda memasarkan dan menemukan</p>
+        <p class="font-medium">properti dengan mudah.</p>
+      </div>
+      <div class="bg-white p-6 rounded shadow  h-60 ">
+        <img src="img/servis/three.png" class="h-32  mx-auto mb-3" />
+        <p class="font-medium">Kunjungi lokasi properti langsung</p>
+        <p class="font-medium">sebelum memutuskan.</p>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="py-10 bg-white text-center" id="galery">
+    <h2 class="text-2xl  text-[#4B6FA9] font-bold mb-6">Galery</h2>
+    <div class="container mx-auto flex justify-center gap-9 flex-wrap px-4">
+
+      <!-- Item 1 -->
+      <div class="w-60">
+        <div class="w-full h-80 overflow-hidden rounded shadow">
+          <img src="img/galery/desain rumah minimalis tahun 2024.jpg" alt="Tempat A" class="w-full h-80 object-cover" />
+        </div>
+        <p class=" bg-gray-800 text-white py-1 h-10">Tempat A</p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="w-60">
+        <div class="w-full h-80 overflow-hidden rounded shadow">
+          <img src="img/galery/images (5).jpg" alt="Tempat B" class="w-full h-full object-cover" />
+        </div>
+        <p class=" bg-gray-800 text-white py-1 h-10">Tempat B</p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="w-60">
+        <div class="w-full h-80 overflow-hidden rounded shadow">
+          <img src="img/galery/images (6).jpg" alt="Tempat C" class="w-full h-full object-cover" />
+        </div>
+        <p class=" bg-gray-800 text-white py-1 h-10">Tempat C</p>
+      </div>
+
+      <div class="w-60">
+        <div class="w-full h-80 overflow-hidden rounded shadow">
+          <img src="img/galery/images.jpg" alt="Tempat C" class="w-full h-full object-cover" />
+        </div>
+        <p class=" bg-gray-800 text-white py-1 h-10">Tempat D</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="bg-[#4B6FA9] text-white py-10" id="kontak">
+    <h2 class="text-2xl font-bold text-center mb-8">Kontak Kami</h2>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row gap-6">
+      <!-- Kontak Info -->
+      <div class="lg:w-1/2 bg-white text-black p-6 rounded shadow h-fit">
+        <h3 class="text-xl text-gray-600 font-bold mb-4">Hubungi Kami</h3>
+        <p class="font-bold text-gray-600">Alamat:</p>
+        <p>Jl. Melati Raya No. 12, Jakarta Selatan</p>
+        <p class="font-bold text-gray-600">No Telepon:</p>
+        <p>(021) 555-1234</p>
+        <p class="font-bold text-gray-600">WhatsApp:</p>
+        <p>0812-3456-7890</p>
+        <p class="font-bold text-gray-600">Email:</p>
+        <p>info@azisaputra.com</p>
+        <p class="font-bold text-gray-600">Jam Operasional:</p>
+        <p>Senin - Jumat, 08:00 - 17:00</p>
+        <p class="font-bold text-gray-600">Sosial Media:</p>
+        <p>Instagram/Facebook:@azisaputraproperty/ fb.com/azisaputraproperty</p>
+      </div>
+
+      <!-- Formulir -->
+      <div class="lg:w-1/2 bg-white text-black p-6 rounded shadow h-fit">
+        <form>
+          <input type="text" placeholder="Nama"
+            class="bg-gray-300 w-full mb-4 p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4B6FA9]" />
+          <input type="email" placeholder="Email"
+            class="bg-gray-300 w-full mb-4 p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#4B6FA9]" />
+          <textarea placeholder="Pesan"
+            class="bg-gray-300 w-full mb-4 p-3 border border-gray-300 rounded-xl h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#4B6FA9]"></textarea>
+          <button type="submit"
+            class="bg-[#4B6FA9] text-white px-4 py-3 rounded-xl w-full hover:bg-[#3a5c90] transition">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-4 text-sm">
+    <p class="text-[#4B6FA9] font-medium">&copy; 2025 AZISAPUTRA PROPERTIES. All rights reserved.</p>
+    <div class="flex justify-center mt-2 gap-4">
+      <a href="#"><img src="img/icon-medsos/fb.png" alt="fb" class="h-5" /></a>
+      <a href="#"><img src="img/icon-medsos/ig.png" alt="ig" class="h-5" /></a>
+    </div>
+  </footer>
+</body>
+
+</html>
