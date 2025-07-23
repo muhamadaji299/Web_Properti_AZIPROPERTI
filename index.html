@@ -15,43 +15,45 @@
 
 <body class="font-sans text-gray-800">
   <header class="fixed top-0 w-full bg-white z-50 shadow">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <!-- Logo -->
-      <img src="logo.png" alt="Logo" class="h-12">
+  <div class="relative max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+    <!-- Logo (Kiri) -->
+    <img src="log.png" alt="Logo" class="h-[67px] z-10">
 
-      <!-- Hamburger Button (Mobile only) -->
-      <button class="md:hidden" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+    <!-- Nav Menu (Tengah) -->
+    <nav class="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+      <a href="#" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Home</a>
+      <a href="#about" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">About</a>
+      <a href="#servis" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Servis</a>
+      <a href="#galery" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Galery</a>
+      <a href="#kontak" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Contact</a>
+    </nav>
 
-      <!-- Nav Menu (Desktop) -->
-      <nav class="hidden md:flex space-x-5">
-        <a href="#" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Home</a>
-        <a href="#about" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">About</a>
-        <a href="#servis" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Servis</a>
-        <a href="#galery" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Galery</a>
-        <a href="#kontak" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Contact</a>
-      </nav>
-    </div>
+    <!-- Hamburger Button (Kanan - Mobile only) -->
+    <button class="md:hidden z-10" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
-      <nav class="flex flex-col space-y-2">
-        <a href="#" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Home</a>
-        <a href="#about" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">About</a>
-        <a href="#servis" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Servis</a>
-        <a href="#galery" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Galery</a>
-        <a href="#kontak" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+    <nav class="flex flex-col space-y-2">
+      <a href="#" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Home</a>
+      <a href="#about" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">About</a>
+      <a href="#servis" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Servis</a>
+      <a href="#galery" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Galery</a>
+      <a href="#kontak" class="text-black hover:text-white hover:bg-[#4B6FA9] px-4 py-2 rounded-xl">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
 
 
 
   <section class="relative" id="home">
-    <img src="bg-home.avif" alt="Hero Image" class="w-full h-[600px]" />
+    <img src="bg-home.avif" alt="Hero Image" class="w-full h-[550px]" />
     <div
       class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center">
       <h1 class="text-4xl font-bold">WELCOME TO AZI SAPUTRA</h1>
@@ -59,44 +61,9 @@
     </div>
   </section>
 
-  <section class="bg-white py-6 shadow" id="about">
-    <div class="container mx-auto flex justify-center gap-14 flex-wrap">
-      <a href="" class="text-center">
-        <img src="1.png" class="h-10 mx-auto" />
-        <p class="text-sm mt-1">Properti Baru</p>
-      </a>
-      <a href="" class="text-center">
-        <img src="2.png" class="h-10 mx-auto" />
-        <p class="text-sm mt-1">Beli Rumah </p>
-      </a>
-      <a href="" class="text-center">
-        <img src="3.png" class="h-10 mx-auto" />
-        <p class="text-sm mt-1">Beli Tanah</p>
-      </a>
-      <a href="" class="text-center">
-        <img src="4.png" class="h-10 mx-auto" />
-        <p class="text-sm mt-1">Sewa Rumah</p>
-      </a>
-      <a href="" class="text-center">
-        <img src="5.png" class="h-10 mx-auto" />
-        <p class="text-sm mt-1">Sewa Apartemen</p>
-      </a>
-      <a href="" class="text-center">
-        <img src="6.png" class="h-10 mx-auto" />
-        <p class="text-sm mt-1">Sewa Kost</p>
-      </a>
-      <a href="" class="text-center">
-        <img src="7.png" class="h-10 mx-auto" />
-        <p class="text-sm mt-1">Simulasi Kpr</p>
-      </a>
-      <a href="" class="text-center">
-        <img src="8.png" class="h-10 mx-auto" />
-        <p class="text-sm mt-1">All</p>
-      </a>
-    </div>
-  </section>
+ 
 
-  <section class="py-10 bg-white">
+  <section class="py-10 bg-white" id="about">
     <div class="container mx-auto flex flex-col lg:flex-row gap-6 px-4">
       <img src="bg-about.jpg" alt="Rumah" class="w-full lg:w-1/2 rounded shadow" />
       <div class="lg:w-1/2">
@@ -112,28 +79,40 @@
     </div>
   </section>
 
-  <section class="py-10 bg-[#4B6FA9]  text-center" id="servis">
-    <h2 class="text-2xl text-white font-bold mb-6">Servis</h2>
-    <div class="container mx-auto flex justify-center gap-7 flex-wrap px-4">
-      <div class="bg-white p-6 rounded shadow  h-60 ">
-        <img src="one.png" class="h-32  mx-auto mb-3" />
+  <section class="py-10 bg-[#4B6FA9] text-center" id="servis">
+  <h2 class="text-2xl text-white font-bold mb-6">Service</h2>
+  <div class="container mx-auto flex justify-center gap-7 flex-wrap px-4">
+    
+    <!-- Card 1 -->
+    <div class="bg-white p-6 rounded shadow w-64 h-72 flex flex-col justify-between">
+      <img src="one.png" class="h-28 object-contain mx-auto mb-3" />
+      <div>
         <p class="font-medium">Dapatkan panduan properti langsung</p>
-        <p class="font-medium"> dari tim ahli kami.</p>
+        <p class="font-medium">dari tim ahli kami.</p>
       </div>
-      <div class="bg-white p-6 rounded shadow  h-60 ">
-        <img src="two.png" class="h-32  mx-auto mb-3" />
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white p-6 rounded shadow w-64 h-72 flex flex-col justify-between">
+      <img src="two.png" class="h-28 object-contain mx-auto mb-3" />
+      <div>
         <p class="font-medium">Bantu Anda memasarkan dan menemukan</p>
         <p class="font-medium">properti dengan mudah.</p>
       </div>
-      <div class="bg-white p-6 rounded shadow  h-60 ">
-        <img src="three.png" class="h-32  mx-auto mb-3" />
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white p-6 rounded shadow w-64 h-72 flex flex-col justify-between">
+      <img src="three.png" class="h-28 object-contain mx-auto mb-3" />
+      <div>
         <p class="font-medium">Kunjungi lokasi properti langsung</p>
         <p class="font-medium">sebelum memutuskan.</p>
       </div>
-
-
     </div>
-  </section>
+
+  </div>
+</section>
+
 
   <section class="py-10 bg-white text-center" id="galery">
     <h2 class="text-2xl  text-[#4B6FA9] font-bold mb-6">Galery</h2>
