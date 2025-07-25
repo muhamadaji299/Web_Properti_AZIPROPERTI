@@ -8,6 +8,16 @@
   <link rel="icon" type="image/img" href="img/logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
   <!-- Swiper CSS -->
 <link
   rel="stylesheet"
@@ -165,29 +175,59 @@
  <section class="py-10 bg-white text-center" id="galery">
   <h2 class="text-2xl text-[#4B6FA9] font-bold mb-6">Galery</h2>
 
-  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    <!-- Item -->
-    <div class="bg-white shadow rounded overflow-hidden">
-      <img src="desain rumah minimalis tahun 2024.jpg" alt="Tempat A" class="w-full h-60 object-cover" />
-      <p class="bg-gray-800 text-white py-1 h-10">Tempat A</p>
-    </div>
+  <!-- Tombol panah -->
+  <div class="relative max-w-6xl mx-auto px-4">
+    <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#4B6FA9] text-white px-3 py-2 rounded-full shadow hover:bg-[#3a5c8f]">&larr;</button>
+    <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#4B6FA9] text-white px-3 py-2 rounded-full shadow hover:bg-[#3a5c8f]">&rarr;</button>
 
-    <div class="bg-white shadow rounded overflow-hidden">
-      <img src="images (5).jpg" alt="Tempat B" class="w-full h-60 object-cover" />
-      <p class="bg-gray-800 text-white py-1 h-10">Tempat B</p>
-    </div>
+    <!-- Wrapper galeri -->
+    <div id="slider" class="flex overflow-x-auto gap-6 scroll-smooth no-scrollbar">
 
-    <div class="bg-white shadow rounded overflow-hidden">
-      <img src="images (6).jpg" alt="Tempat C" class="w-full h-60 object-cover" />
-      <p class="bg-gray-800 text-white py-1 h-10">Tempat C</p>
-    </div>
+      <!-- Galeri Item -->
+      <div class="min-w-[250px] flex-shrink-0 bg-white shadow rounded overflow-hidden">
+        <img src="desain rumah minimalis tahun 2024.jpg" class="w-full h-60 object-cover" alt="Tempat A">
+        <div class="p-4 text-left">
+          <h3 class="font-semibold text-lg text-[#4B6FA9]">Rumah Modern</h3>
+          <p class="text-sm text-gray-600">Jl. Contoh Alamat No.1, Jakarta</p>
+          <p class="text-sm text-green-600 font-semibold mb-3">Harga: Rp850.000.000</p>
+          <a href="#" class="inline-block bg-[#4B6FA9] text-white px-4 py-2 rounded hover:bg-[#3a5c8f] transition">Pesan</a>
+        </div>
+      </div>
 
-    <div class="bg-white shadow rounded overflow-hidden">
-      <img src="images.jpg" alt="Tempat D" class="w-full h-60 object-cover" />
-      <p class="bg-gray-800 text-white py-1 h-10">Tempat D</p>
+      <div class="min-w-[250px] flex-shrink-0 bg-white shadow rounded overflow-hidden">
+        <img src="images (5).jpg" class="w-full h-60 object-cover" alt="Tempat B">
+        <div class="p-4 text-left">
+          <h3 class="font-semibold text-lg text-[#4B6FA9]">Rumah Minimalis</h3>
+          <p class="text-sm text-gray-600">Jl. Mawar Indah No.5, Bandung</p>
+          <p class="text-sm text-green-600 font-semibold mb-3">Harga: Rp720.000.000</p>
+          <a href="#" class="inline-block bg-[#4B6FA9] text-white px-4 py-2 rounded hover:bg-[#3a5c8f] transition">Pesan</a>
+        </div>
+      </div>
+
+      <div class="min-w-[250px] flex-shrink-0 bg-white shadow rounded overflow-hidden">
+        <img src="images (6).jpg" class="w-full h-60 object-cover" alt="Tempat C">
+        <div class="p-4 text-left">
+          <h3 class="font-semibold text-lg text-[#4B6FA9]">	Rumah Tropis</h3>
+          <p class="text-sm text-gray-600">Jl. Sukajadi No.9, Yogyakarta</p>
+          <p class="text-sm text-green-600 font-semibold mb-3">Harga: Rp690.000.000</p>
+          <a href="#" class="inline-block bg-[#4B6FA9] text-white px-4 py-2 rounded hover:bg-[#3a5c8f] transition">Pesan</a>
+        </div>
+      </div>
+
+      <div class="min-w-[250px] flex-shrink-0 bg-white shadow rounded overflow-hidden">
+        <img src="images.jpg" class="w-full h-60 object-cover" alt="Tempat D">
+        <div class="p-4 text-left">
+          <h3 class="font-semibold text-lg text-[#4B6FA9]">Rumah Modern</h3>
+          <p class="text-sm text-gray-600">Jl. Melati No.23, Surabaya</p>
+          <p class="text-sm text-green-600 font-semibold mb-3">Harga: Rp910.000.000</p>
+          <a href="#" class="inline-block bg-[#4B6FA9] text-white px-4 py-2 rounded hover:bg-[#3a5c8f] transition">Pesan</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
 
 
 
@@ -266,6 +306,18 @@
       el: ".swiper-pagination",
       clickable: true,
     },
+  });
+
+   const slider = document.getElementById('slider');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  nextBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    slider.scrollBy({ left: -300, behavior: 'smooth' });
   });
 </script>
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#4B6FA9] min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold text-center text-[#4B6FA9] mb-6">Login ke Akun Anda</h2>
+    <form>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-medium mb-1" for="email">Email</label>
+        <input type="email" id="email" placeholder="email@example.com"
+          class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#4B6FA9]" />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 font-medium mb-1" for="password">Password</label>
+        <input type="password" id="password" placeholder="********"
+          class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-[#4B6FA9]" />
+      </div>
+      <button type="submit"
+        class="w-full bg-[#4B6FA9] text-white py-2 rounded hover:bg-[#3a5892] transition">Login</button>
+    </form>
+    <p class="mt-4 text-center text-sm text-gray-600">Belum punya akun?
+      <a href="register.html" class="text-[#4B6FA9] hover:underline">Daftar di sini</a>
+    </p>
+  </div>
+
+</body>
+</html>
